@@ -1,0 +1,10 @@
+<h1>统计结果为{{total_count}}字</h1>
+<h2>你输入的内容</h2>
+{{user_text}}
+<br>
+{{sorted}}
+<br>
+{% for word, count in sorted %}
+{{word}} - {{count}}
+<br>
+{% endfor %}

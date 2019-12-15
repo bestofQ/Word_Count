@@ -1,0 +1,16 @@
+time:2019/12/08
+1、urls中创建新的paths
+2、导入新的py模块  from wordcount import function
+3、新建path，   path('', function.home),
+4、新建functioon.py文件，def一个home
+5、return render(request, 'home.html')
+6、在templates新建一个home.html的网页文件
+7、在setting.py中写入templates的路径 'DIRS': [os.path.join(BASE_DIR, 'templates')],
+
+time:2019/12/09
+1、在home.html中，点击 统计按钮之后，执行form表单的action命令，转到xxx...\action\网址
+2、在url中设置新的path ===> path('count/', function.count)
+3、根据命令，执行function中的count 函数
+4、return render(request, 'count.html') 显示网页
+5、request.GET['text'] # 获取home.html中输入的文本信息
+6、到此我们可以获取输入的文本信息
