@@ -22,3 +22,6 @@ def count(request):
     return render(request, 'count.html',
                   {'total_count': total_count, 'user_text': user_text,
                    'word_dict': word_dict, 'sorted': sorted_dict})
+
+def about(request):
+    return render(request, 'about.html')
